@@ -69,7 +69,7 @@
     transition: 1s;
     position: absolute;
     top: 272px;
-    right: 25%;
+    right: 16%;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
@@ -85,9 +85,8 @@
     background-color: rgb(255 255 255 / 90%);
     position: absolute;
     top: 230px;
-    right: 476px;
+    right: 16%;
     align-items: center;
-    align-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
