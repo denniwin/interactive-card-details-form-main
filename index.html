@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="desktop mobile">
+  <main class="container">
+      <div class="wrapper__card_front">
+        <img class="img__card" src="./images/bg-card-front.png" alt="bg-card-front">
+        <div class="circle__white"></div>
+        <div class="circle__border"></div>
+        <div class="cardnumber__front">0000 0000 0000 0000</div>
+        <div class="cardname__front">Jane Appleseed</div>
+        <div class="carddate__front_mm">00</div>
+        <div class="carddate__front_delimiter">/</div>
+        <div class="carddate__front_yy">00</div>
+    </div>
+    <div class="wrapper__card_back">
+        <img class="img__card card-back" src="./images/bg-card-back.png" alt="bg-card-back">
+        <div class="cvc__back">000</div>
+    </div>
+
+    <section class="wrapper__input_card">
+        <form class="feedback__input">
+            <label>CARDHOLDER NAME<input type="text" class="form__input cardholder" placeholder="e.g. Jane Appleseed" maxlength="30" required></label>
+            <label>CARD NUMBER<input type="text" class="form__input cardnumber" placeholder="e.g 1234 5678 9123 0000" required></label>
+                <div class="wrapper__mm_yy">
+                    <label for="date__mm">EXT. DATE (MM/YY)</label>
+                    <input type="text" class="form__input date__mm" placeholder="MM" required>
+                    <input type="text" class="form__input date__yy" placeholder="YY" required>
+                </div>
+                <div class="wrapper__cvc">  <label for="cvc">CVC</label>
+                  <input type="text" class="form__input cvc" placeholder="e.g. 123"required>
+              </div>
+              <button class="button__confirm" type="submit">Confirm</button>
+        </form>
+            <div class="feedback__input_finish">
+                <img class="check" src="./images/icon-complete.svg" alt="check">
+                    <p class="title__bold">THANK YOU</p>
+                    <p class="title__light">We've added your card details</p>
+                    <button class="button__return" type="button">Continue</button>
+            </div>
+    </section>
+  </main>
+  <!-- I don't understand why the footer is at the top, please help -->
+  <footer class="attribution"> 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Den</a>.
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js" integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+</html>
